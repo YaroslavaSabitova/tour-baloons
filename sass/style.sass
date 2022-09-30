@@ -1,0 +1,149 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    // font-size: 10px
+    // 10px : 16px (по умолчанию) * 100 = 62.5%
+    // для изменения размера шрифта для слабовидящих 
+    font-size: 62.5%
+
+body
+    font-family: "Roboto", sans-serif
+    font-weight: 400
+    font-size: 1.6rem
+    color: #777777
+    letter-spacing: .2rem
+    padding: 5rem
+    background: white
+
+.container
+    background-color: #f7f7f7
+
+.header
+    position: relative
+    /*высота во весь экран*/
+    height: 95vh          
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/background-1.svg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%)
+    &__logo
+        position: absolute
+        top: 5rem
+        left: 5rem
+        width: 5.6rem
+        height: 7rem
+    &__box
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        text-align: center
+    
+.title-first
+    color: white
+    &__main
+        display: block
+        text-transform: uppercase
+        font-size: 5rem
+        font-weight: 800
+        letter-spacing: 1rem
+        line-height: 6rem
+        margin-bottom: 1rem
+        animation-name: LeftToRight
+        animation-duration: 4s
+        animation-delay: 1s
+        /* плавность */
+        animation-timing-function: ease
+        /* нормализует анимацию */
+        backface-visibility: hidden
+    &__secondary
+        display: block
+        margin-bottom: 5rem
+        font-size: 4rem
+        font-weight: 200
+        letter-spacing: .5rem
+        line-height: 4.8rem
+        animation-name: RightToLeft
+        animation-duration: 4s
+        animation-delay: 1s
+        animation-timing-function: ease
+        backface-visibility: hidden
+
+@keyframes LeftToRight
+    0%
+        opacity: 0
+        transform: translateX(-10rem)
+    80%
+        transform: translateX(1rem)
+    100%
+        opacity: 1
+        transform: translateX(0px)
+
+@keyframes RightToLeft
+    0%
+        opacity: 0
+        transform: translateX(10rem)
+    80%
+        transform: translateX(-1rem)
+    100%
+        opacity: 1
+        transform: translateX(0px)
+        
+.btn
+    &:link, &:visited
+        text-transform: uppercase
+        text-decoration: none
+        color: #777777
+        background: white
+        padding: 1.5rem 4rem
+        border: none
+        border-radius: 5rem
+        font-weight: 600
+        font-size: 2rem
+        line-height: 2.4rem
+        letter-spacing: .5rem
+        display: inline-block
+        transition: all .3s
+        position: relative
+    &:hover
+        transform: translateY(-.5rem)
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+        &::after
+            opacity: 0
+            transform: scaleX(1.5) scaleY(1.7)
+    &:active
+        transform: translateY(-2px)
+        color: #605f5f
+        background: #eeede7
+        box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.6)
+    &::after
+        content: "" 
+        background: white
+        width: 100%
+        height: 100%
+        border-radius: 5rem
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        transition: all .7s
+    &_animated
+        animation: BtnToUP .5s ease-out .7s
+        // animation-name: BtnToUP
+        // animation-duration: 5s
+        // animation-timing-function: ease-out
+        // animation-delay: .7s
+        backface-visibility: hidden
+        //анимация после периода задержки в .7s
+        animation-fill-mode: backwards
+
+@keyframes BtnToUP
+    0%
+        opacity: 0
+        transform: translateY(5rem)
+    100%
+        opacity: 1
+        transform: translateY(0px)    

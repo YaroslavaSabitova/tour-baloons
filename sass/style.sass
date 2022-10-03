@@ -1,6 +1,16 @@
 $color-grey:  #777777
-$color-background: #b7b6b6
-    
+$color-background: #f7f7f7
+$color-brown-light: #BA8554
+$color-brown-dark: #A14F03
+$color-black: #000000
+$color-white: #ffffff
+
+$box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.5)
+
+@mixin style-link
+    text-transform: uppercase
+    text-decoration: none
+
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -19,7 +29,7 @@ body
     color: $color-grey
     letter-spacing: .2rem
     padding: 5rem
-    background: white
+    background: $color-white
 
 .container
     background-color: $color-background
@@ -28,7 +38,7 @@ body
     position: relative
     /*высота во весь экран*/
     height: 95vh          
-    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/background-1.svg) center / cover no-repeat
+    background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/background-1.svg) center / cover no-repeat
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%)
     &__logo
         position: absolute
@@ -45,7 +55,7 @@ body
         text-align: center
     
 .title-first
-    color: white
+    color: $color-white
     &__main
         display: block
         text-transform: uppercase
@@ -82,7 +92,7 @@ body
         transform: translateX(1rem)
     100%
         opacity: 1
-        transform: translateX(0px)
+        transform: translateX(0)
 
 @keyframes RightToLeft
     0%
@@ -92,14 +102,13 @@ body
         transform: translateX(-1rem)
     100%
         opacity: 1
-        transform: translateX(0px)
+        transform: translateX(0)
         
 .btn
     &:link, &:visited
-        text-transform: uppercase
-        text-decoration: none
+        @include style-link
         color: $color-grey
-        background: white
+        background: $color-white
         padding: 1.5rem 4rem
         border: none
         border-radius: 5rem
@@ -112,18 +121,18 @@ body
         position: relative
     &:hover
         transform: translateY(-.5rem)
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5)
+        box-shadow: $box-shadow
         &::after
             opacity: 0
             transform: scaleX(1.5) scaleY(1.7)
     &:active
-        transform: translateY(-2px)
+        transform: translateY(-.2rem)
         color: #605f5f
         background: #eeede7
         box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.6)
     &::after
         content: "" 
-        background: white
+        background: $color-white
         width: 100%
         height: 100%
         border-radius: 5rem
@@ -149,4 +158,4 @@ body
         transform: translateY(5rem)
     100%
         opacity: 1
-        transform: translateY(0px)    
+        transform: translateY(0)    

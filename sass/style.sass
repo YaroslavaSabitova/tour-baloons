@@ -1,3 +1,6 @@
+$color-grey:  #777777
+$color-background: #b7b6b6
+    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -13,13 +16,13 @@ body
     font-family: "Roboto", sans-serif
     font-weight: 400
     font-size: 1.6rem
-    color: #777777
+    color: $color-grey
     letter-spacing: .2rem
     padding: 5rem
     background: white
 
 .container
-    background-color: #f7f7f7
+    background-color: $color-background
 
 .header
     position: relative
@@ -95,7 +98,7 @@ body
     &:link, &:visited
         text-transform: uppercase
         text-decoration: none
-        color: #777777
+        color: $color-grey
         background: white
         padding: 1.5rem 4rem
         border: none

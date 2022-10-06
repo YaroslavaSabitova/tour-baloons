@@ -32,8 +32,8 @@ body {
   position: relative;
   /*высота во весь экран*/
   height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/background-1.svg) center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 87%);
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/background-1.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .header__logo {
@@ -135,7 +135,7 @@ body {
 
 .btn:hover {
   transform: translateY(-0.5rem);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .btn:hover::after {
@@ -181,19 +181,21 @@ body {
   }
 }
 
-.section-about {
-  padding-top: 8rem;
+.section-about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .title-second {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
   text-align: center;
   font-size: 3.6rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-weight: 800;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
-  -webkit-background-clip: text;
-  color: transparent;
   transition: all .7s;
   backface-visibility: hidden;
 }
@@ -203,11 +205,6 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.section-about__part1 {
-  display: flex;
-  justify-content: space-between;
-}
-
 .title-third {
   font-size: 2rem;
   font-weight: 700;
@@ -215,6 +212,11 @@ body {
   color: #777777;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  transition: .5s;
+}
+
+.title-third:hover {
+  color: #565656;
 }
 
 .paragraph {
@@ -229,8 +231,16 @@ body {
   margin-bottom: 1rem;
 }
 
+.margin-bottom-20px {
+  margin-bottom: 2rem;
+}
+
 .margin-bottom-30px {
   margin-bottom: 3rem;
+}
+
+.margin-bottom-50px {
+  margin-bottom: 5rem;
 }
 
 .margin-bottom-80px {
@@ -251,7 +261,7 @@ body {
 .btn-text:hover {
   color: #ffffff;
   background: #BA8554;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   transform: translateY(-0.2rem);
 }
 
@@ -261,11 +271,11 @@ body {
   box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.part1__text {
+.wrapper__text {
   width: 50%;
 }
 
-.part1__imgs {
+.wrapper__imgs {
   width: 50%;
 }
 
@@ -275,7 +285,7 @@ body {
 
 .composition__photo {
   width: 55%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: .5rem;
   position: absolute;
   z-index: 10;
@@ -307,4 +317,47 @@ body {
 
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
+}
+
+.section-adventure {
+  height: 73.1rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/background-2.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+}
+
+.adventure-card {
+  background: rgba(255, 255, 255, 0.8);
+  width: 24rem;
+  border-radius: .5rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+
+.adventure-card:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+.adventure-card__icon {
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6.3rem;
+}
+
+.adventure-card:hover > .adventure-card__icon {
+  background: #A14F03;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.adventure-card:hover > .title-third {
+  color: #565656;
 }

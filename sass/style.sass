@@ -16,6 +16,8 @@ $inner-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, .3)
 $shadow-h2: 0px 4px 4px rgba(0, 0, 0, 0.25)
 $color-gradient: linear-gradient(90deg, $color-brown-light 3.65%, $color-brown-dark 100%)
 
+$color-book: linear-gradient(105deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 55%, rgba(195,149,106,0.2) 55.1%, rgba(195,149,106,0.2)), url(../img/form-background.jpg) center / cover no-repeat
+
 $color-gradient-black: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%)
 
 $color-gradient-90: linear-gradient(90deg,$color-brown-light,$color-brown-dark)
@@ -77,7 +79,10 @@ $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark
     justify-content: space-between
     width: 100%
 
+.text-align
+    text-align: center
 
+    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -237,10 +242,28 @@ body
     transition: all .7s
     backface-visibility: hidden
     text-shadow: $shadow-h2
+    position: relative
+    display: inline-block
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        transform: scaleX(0)
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: $color-brown-light
+        transform-origin: bottom right
+        transition: transform 0.5s ease-out
+        margin-bottom: -1rem
+    &:hover
+        &::after
+            transform: scaleX(1)
+            transform-origin: bottom left
     &_white
         color: $color-white
-    &:hover
-        transform: skewY(2deg) skewX(15deg)
+        &::after
+            background-color: $color-white
 
 .title-third
     font-size: 2rem
@@ -487,7 +510,7 @@ body
 
 .book
     height: 50rem
-    background: linear-gradient(105deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 55%, rgba(195,149,106,0.2) 55.1%, rgba(195,149,106,0.2)), url(../img/form-background.jpg) center / cover no-repeat
+    background: $color-book
     box-shadow: $box-shadow
     border-radius: .5rem
     overflow: hidden

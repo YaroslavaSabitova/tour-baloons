@@ -11,6 +11,10 @@
   margin-bottom: 3rem;
 }
 
+.margin-bottom-40px {
+  margin-bottom: 4rem;
+}
+
 .margin-bottom-50px {
   margin-bottom: 5rem;
 }
@@ -161,7 +165,7 @@ body {
   }
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
@@ -176,7 +180,7 @@ body {
   display: inline-block;
   transition: all .3s;
   position: relative;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
 }
 
 .btn:hover {
@@ -206,13 +210,27 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .7s;
+  transition: all .5s;
 }
 
 .btn_animated {
   animation: BtnToUP .5s ease-out .7s;
   backface-visibility: hidden;
   animation-fill-mode: backwards;
+}
+
+.btn_brown {
+  color: #ffffff;
+  background: #c3956a;
+  transition: all .3s;
+}
+
+.btn_brown:active {
+  color: #A14F03;
+}
+
+.btn_brown::after {
+  background: #c3956a;
 }
 
 @keyframes BtnToUP {
@@ -224,6 +242,10 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.section-about {
+  text-align: center;
 }
 
 .title-second {
@@ -305,7 +327,7 @@ body {
 .btn-text:hover {
   color: #ffffff;
   background: #c3956a;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   transform: translateY(-0.2rem);
 }
 
@@ -317,6 +339,7 @@ body {
 
 .wrapper__text {
   width: 50%;
+  text-align: left;
 }
 
 .wrapper__text:hover .title-third {
@@ -333,7 +356,7 @@ body {
 
 .composition__photo {
   width: 55%;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   border-radius: .5rem;
   position: absolute;
   z-index: 10;
@@ -384,7 +407,7 @@ body {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   transition: .5s;
 }
 
@@ -430,7 +453,7 @@ body {
   left: 0;
   width: 100%;
   backface-visibility: hidden;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -556,7 +579,7 @@ body {
 .feedback-card {
   width: 95%;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   padding: 5rem 18rem;
   clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
   border-radius: .5rem;
@@ -613,9 +636,9 @@ body {
 }
 
 .book {
-  height: 50rem;
+  height: 51rem;
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 55%, rgba(195, 149, 106, 0.2) 55.1%, rgba(195, 149, 106, 0.2)), url(../img/form-background.jpg) center/cover no-repeat;
-  box-shadow: 4px 4px 4px #46464680;
+  box-shadow: 3px 3px 4px #7e7e7e80;
   border-radius: .5rem;
   overflow: hidden;
   padding: 5rem;
@@ -623,4 +646,86 @@ body {
 
 .book-title {
   text-align: left;
+}
+
+.form__input {
+  width: 40%;
+  padding: 1.2rem 2.2rem;
+  text-align: left;
+  color: #000000;
+  border: none;
+  border-radius: .3rem;
+  border-bottom: .3rem solid transparent;
+  box-shadow: 2px 2px 2px #cdcaca80;
+  transition: all .5s;
+}
+
+.form__input:hover {
+  box-shadow: 3px 3px 4px #7e7e7e80;
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #3cdb37;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 0.3rem solid #D76363;
+}
+
+.form__label {
+  display: block;
+  transition: all .5s;
+  margin: 1rem 0 0 1.5rem;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2rem);
+}
+
+.form__group-radio {
+  width: 25%;
+  display: inline-block;
+}
+
+.form__input-radio {
+  display: none;
+}
+
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.form__button-radio {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 0.3rem solid #A14F03;
+  display: block;
+  position: absolute;
+  top: -.4rem;
+  left: 0rem;
+}
+
+.form__button-radio::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #A14F03;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s;
+}
+
+.form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
+  opacity: 1;
 }

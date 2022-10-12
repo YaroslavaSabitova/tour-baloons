@@ -200,7 +200,7 @@
                     <source src="img/balloons-1.mp4">
                     <source src="img/balloons-2.webm">
                 </video>
-                
+
                 <div class="text-align">
                     <h2 class="title-second title-second_white margin-bottom-80px">
                         отзывы наших клиентов
@@ -244,19 +244,37 @@
             <section class="section-book">
                 <div class="container_size">
                     <div class="book">
-                        <h2 class="title-second book-title margin-bottom-30px">
+                        <h2 class="title-second book-title margin-bottom-40px">
                             забронировать тур
                         </h2>
                         <div class="book__form">
                             <form action="#!" class="form">
+                                <div class="form__group margin-bottom-20px">
+                                    <input type="text" class="form__input paragraph" placeholder="Имя и Фамилия" id="name" required>
+                                    <label for="name" class="form__label paragraph">Введите Ваши имя и фамилию</label>
+                                </div>
+                                <div class="form__group margin-bottom-30px">
+                                    <input type="email" class="form__input paragraph" placeholder="Ваш email" id="email" required>
+                                    <label for="email" class="form__label paragraph">Введите Ваш email</label>
+                                </div>
+
                                 <div class="form__group margin-bottom-50px">
-                                    <input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
-                                    <label for="name" class="form__label">Ваше имя и фамилия</label>
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio paragraph" id="tour-1" name="checked">
+                                        <label class="form__label-radio paragraph" for="tour-1">
+                                            <span class="form__button-radio"></span>
+                                            Групповой тур</label>
+                                    </div>
+                                    <div class="form__group-radio">
+                                        <input type="radio" class="form__input-radio paragraph" id="tour-2" name="checked">
+                                        <label class="form__label-radio paragraph" for="tour-2">
+                                            <span class="form__button-radio"></span>
+                                            Индивидуальный тур</label>
+                                    </div>
                                 </div>
 
                                 <div class="form__group">
-                                    <input type="email" class="form__input" placeholder="Ваш email" id="email" required>
-                                    <label for="email" class="form__label">Ваш email</label>
+                                    <button class="btn btn_brown">Забронировать</button>
                                 </div>
                             </form>
                         </div>

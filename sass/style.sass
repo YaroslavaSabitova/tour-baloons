@@ -8,14 +8,15 @@ $color-brown-light: #c3956a
 $color-brown-dark: #A14F03
 
 //Кнопки
-$color-btn-active:  #eeeeed
-$box-shadow: 4px 4px 4px #46464680
+$color-btn-active: #eeeeed
+$box-shadow: 3px 3px 4px #7e7e7e80
 $inner-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, .3)
 
-//Текст
+//Заголовки
 $shadow-h2: 0px 4px 4px rgba(0, 0, 0, 0.25)
 $color-gradient: linear-gradient(90deg, $color-brown-light 3.65%, $color-brown-dark 100%)
 
+//Градиент
 $color-book: linear-gradient(105deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9) 55%, rgba(195,149,106,0.2) 55.1%, rgba(195,149,106,0.2)), url(../img/form-background.jpg) center / cover no-repeat
 
 $color-gradient-black: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%)
@@ -24,6 +25,9 @@ $color-gradient-90: linear-gradient(90deg,$color-brown-light,$color-brown-dark)
 
 $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark)
 
+//Формы
+$color-valid-form: #3cdb37
+$color-invalid-form: #D76363
 
 @mixin color-gradient
     background: $color-gradient
@@ -41,7 +45,6 @@ $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark
     width: 100%
     height: 100%
     margin: 0
-    
 
 .margin-bottom-10px
     margin-bottom: 1rem
@@ -51,6 +54,9 @@ $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark
 
 .margin-bottom-30px
     margin-bottom: 3rem
+
+.margin-bottom-40px
+    margin-bottom: 4rem
 
 .margin-bottom-50px
     margin-bottom: 5rem
@@ -63,7 +69,6 @@ $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark
 
 .padding-bottom-80px
     padding-bottom: 8rem
-
 
 .container_color
     background-color: $color-background
@@ -82,7 +87,6 @@ $color-gradient-120: linear-gradient(120deg,$color-brown-light,$color-brown-dark
 .text-align
     text-align: center
 
-    
 *, ::after, ::before
     margin: 0
     padding: 0
@@ -177,7 +181,7 @@ body
         transform: translateX(0)
 
 .btn
-    &:link, &:visited
+    &, &:link, &:visited
         @include style-link
         color: $color-grey
         background: $color-white
@@ -213,7 +217,7 @@ body
         top: 0
         left: 0
         z-index: -1
-        transition: all .7s
+        transition: all .5s
     &_animated
         animation: BtnToUP .5s ease-out .7s
         // animation-name: BtnToUP
@@ -223,6 +227,14 @@ body
         backface-visibility: hidden
         //анимация после периода задержки в .7s
         animation-fill-mode: backwards
+    &_brown
+        color: $color-white
+        background: $color-brown-light
+        transition: all .3s
+        &:active
+            color: $color-brown-dark
+        &::after
+            background: $color-brown-light
 
 @keyframes BtnToUP
     0%
@@ -231,6 +243,9 @@ body
     100%
         opacity: 1
         transform: translateY(0)
+
+.section-about
+    text-align: center
 
 .title-second
     @include color-gradient
@@ -305,6 +320,7 @@ body
 .wrapper
     &__text
         width: 50%
+        text-align: left
         &:hover .title-third
             color: $color-grey-dark
     &__imgs
@@ -361,7 +377,7 @@ body
     &__icon
         @include color-gradient
         font-size: 6.3rem
-    &:hover &__icon                             
+    &:hover &__icon
         background: $color-brown-dark
         -webkit-background-clip: text
         color: transparent
@@ -509,7 +525,7 @@ body
     background: $color-gradient-90
 
 .book
-    height: 50rem
+    height: 51rem
     background: $color-book
     box-shadow: $box-shadow
     border-radius: .5rem
@@ -517,4 +533,67 @@ body
     padding: 5rem
     &-title
         text-align: left
+
+.form
+    &__input
+        width: 40%
+        padding: 1.2rem 2.2rem
+        text-align: left
+        color: $color-black
+        border: none
+        border-radius: .3rem
+        border-bottom: .3rem solid transparent
+        box-shadow: 2px 2px 2px #cdcaca80
+        transition: all .5s
+        &:hover
+            box-shadow: $box-shadow
+        &:focus
+            outline: none
+            border-bottom: .3rem solid $color-valid-form
+        &:focus:invalid
+            border-bottom: .3rem solid $color-invalid-form
+    &__label
+        display: block
+        transition: all .5s
+        margin: 1rem 0 0 1.5rem
+    &__input:placeholder-shown + &__label
+        opacity: 0
+        visibility: hidden
+        transform: translateY(-2rem)
+
+    &__group-radio
+        width: 25%
+        display: inline-block
+    &__input-radio
+        display: none
+    &__label-radio
+        cursor: pointer
+        position: relative
+        padding-left: 4rem
+    &__button-radio
+        width: 2.5rem
+        height: 2.5rem
+        border-radius: 50%
+        border: .3rem solid $color-brown-dark
+        display: block
+        position: absolute
+        top: -.4rem
+        left: 0rem
+        &::after
+            content: ""
+            display: block
+            width: 1.5rem
+            height: 1.5rem
+            border-radius: 50%
+            background: $color-brown-dark
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+            transition: all .3s
+    
+    &__input-radio:checked ~ &__label-radio &__button-radio::after
+        opacity: 1
+
 

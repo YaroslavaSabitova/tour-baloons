@@ -592,8 +592,33 @@ body
             transform: translate(-50%, -50%)
             opacity: 0
             transition: all .3s
-    
+
     &__input-radio:checked ~ &__label-radio &__button-radio::after
         opacity: 1
+
+.footer
+    background: $color-grey-dark
+    padding: 8rem 0rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    &__logo
+        width: 12rem
+    &__list
+        list-style: none
+        width: 87rem
+        display: flex
+        justify-content: space-between
+    &__item
+    &__link
+        &:link, &:visited
+            color: $color-white
+            text-decoration: none
+            text-transform: uppercase
+            font-weight: 300
+            position: relative
+        &:active
+            color: $color-grey
+        &:hover
 
 

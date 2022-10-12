@@ -729,3 +729,34 @@ body {
 .form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
   opacity: 1;
 }
+
+.footer {
+  background: #383838;
+  padding: 8rem 0rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 12rem;
+}
+
+.footer__list {
+  list-style: none;
+  width: 87rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link:link, .footer__link:visited {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+
+.footer__link:active {
+  color: #777777;
+}

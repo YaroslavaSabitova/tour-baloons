@@ -609,7 +609,6 @@ body
         width: 87rem
         display: flex
         justify-content: space-between
-    &__item
     &__link
         &:link, &:visited
             color: $color-white
@@ -617,8 +616,29 @@ body
             text-transform: uppercase
             font-weight: 300
             position: relative
-        &:active
-            color: $color-grey
+            z-index: 1
+        &::after
+            content: ""
+            background: $color-gradient-90
+            position: absolute
+            top: -7px
+            right: -1rem
+            bottom: -7px
+            left: -1rem
+            z-index: -1
+            transform: scaleX(0)
+            transform-origin: bottom right
+            transition: transform 0.7s ease
+        &:hover::after
+            z-index: -1
+            transform: scaleX(1)
+            transform-origin: bottom left
+    img
+        transition: .7s
         &:hover
+            transform: scale(1.1)
+
+
+
 
 

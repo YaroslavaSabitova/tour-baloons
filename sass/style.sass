@@ -610,7 +610,7 @@ body
     align-items: center
     flex-direction: column
     &__logo
-        width: 12rem
+        width: 10rem
     &__list
         list-style: none
         width: 87rem
@@ -659,6 +659,7 @@ body
         z-index: 27
         text-align: center
         cursor: pointer
+        box-shadow: $box-shadow
     &__background
         width: 5rem
         height: 5rem
@@ -747,45 +748,6 @@ body
 
 // Медиа запросы
 
-// @media (max-width: 600px)
-//     .container
-//         width: 960px
-
-// @media (min-width: 1800px)
-//     html
-//         font-size: 75%
-
-// @media (max-width: 1240px)
-//     html
-//         font-size: 56.25%
-
-//     .title-first__main
-//         font-size: 4rem 
-
-//     .title-first__secondary
-//         font-size: 3.5rem
-//         margin-bottom: 3.5rem
-
-//     .title-second 
-//         font-size: 3rem
-
-//     .container_size
-//         max-width: 90rem
-
-//     .title-third 
-//         font-size: 1.7rem
-
-//     .paragraph 
-//         font-size: 1.5rem
-
-// @media (max-width: 900px)
-//     html
-//         font-size: 50%
-
-// @media (max-width: 600px)
-//     html
-//         font-size: 30%
-
 // Мал комп или горизонтальный планшет
 @media (max-width: 1199px)
     .container
@@ -844,7 +806,20 @@ body
         width: 720px
 
     html
-        font-size: 40%
+        font-size: 34%
+
+    .title-second
+        font-size: 2.8rem
+
+    .title-third
+        font-size: 1.9rem
+        margin-bottom: 1.5rem
+
+    .paragraph
+        font-size: 1.6rem
+
+    .form__input
+        width: 50%
 
 // Горизонтальный тлф
 @media (max-width: 767px)
@@ -852,16 +827,19 @@ body
         width: 540px
 
     html
-        font-size: 35%
+        font-size: 33%
 
     .margin-bottom-80px
         margin-bottom: 5rem
 
-    .paragraph
-        font-size: 2.5rem
+    .title-second
+        font-size: 3.2rem
 
     .title-third
         font-size: 2.7rem
+
+    .paragraph
+        font-size: 2.5rem
 
     .header__logo
         width: 7rem
@@ -908,7 +886,6 @@ body
                 width: 75%
                 text-align: center
                 li
-                    font-weight: 400
                     line-height: 3rem
     .card-tour:not(:last-child)
         margin-bottom: 5rem
@@ -917,7 +894,42 @@ body
         padding: 2rem 3rem
         font-size: 2.7rem
 
+    .feedback-card
+        text-align: center
+        padding: 3rem 7rem
+        &__img
+            float: none
+            width: 20rem
+            height: 20rem
+            margin: 0 auto
+            margin-bottom: 3rem
+
+    .footer
+        &__logo
+            margin-bottom: 7rem
+        &__list
+            width: 55rem
+            flex-wrap: wrap
+            li
+                margin-bottom: 3rem
+        &__link
+            &:link, &:visited
+                font-size: 2rem
+
 // Вертикальный тлф
 @media (max-width: 575px)
     .container
         width: 100%
+
+    html
+        font-size: 30%
+
+    .title-second
+        font-size: 2.9rem
+        line-height: 4rem
+        &::after
+            display: none
+            
+    .title-third
+        font-size: 2.5rem
+        line-height: 4rem

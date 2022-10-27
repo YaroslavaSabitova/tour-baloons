@@ -964,34 +964,55 @@ body
         &-title
             text-align: center
 
-    .form__input
-        width: 100%
-        margin-bottom: 2rem
-
-    .form__label
-        margin: 1rem 0 0 1rem
-        width: 100%
-
-    .form__group-radio
-        width: 100%
-        &:not(:last-child)
-            margin-bottom: 5rem
-
-    .form__label-radio
-        font-size: 3rem
-        padding-left: 7rem
-
-    .form__button-radio
-        width: 3.5rem
-        height: 3.5rem
-        border: 0.5rem solid #A14F03
-
-    .form__group
-        button
-            margin-left: 2rem
+    .form
+        &__input
+            width: 100%
+            margin-bottom: 2rem
+        &__label
+            margin: 1rem 0 0 1rem
+            width: 100%
+        &__group-radio
+            width: 100%
+            &:not(:last-child)
+                margin-bottom: 5rem
+        &__label-radio
+            font-size: 3rem
+            padding-left: 7rem
+        &__button-radio
+            width: 3.5rem
+            height: 3.5rem
+            border: 0.5rem solid #A14F03
+        &__group
+            button
+                margin-left: 2rem
 
     .footer__list
         width: 100%
         flex-direction: column
         align-items: center
         padding: 0 4rem
+
+    .card-tour
+        height: auto
+        box-shadow: $box-shadow
+        &__side
+            position: unset
+            &_front
+                padding-bottom: 13rem
+                box-shadow: none
+            &_back
+                transform: none
+                clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%)
+                padding-top: 4rem
+                margin-top: -10rem
+                height: auto
+        &__back-info
+            height: 85%
+            padding: 6rem
+            display: block
+            &__text
+                margin-bottom: 5rem
+        &__title 
+            top: 25rem
+        &:hover &__side_front
+            transform: rotateY(0deg)

@@ -1193,4 +1193,36 @@ body {
     align-items: center;
     padding: 0 4rem;
   }
+  .card-tour {
+    height: auto;
+    box-shadow: 3px 3px 4px #7e7e7e80;
+  }
+  .card-tour__side {
+    position: unset;
+  }
+  .card-tour__side_front {
+    padding-bottom: 13rem;
+    box-shadow: none;
+  }
+  .card-tour__side_back {
+    transform: none;
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    padding-top: 4rem;
+    margin-top: -10rem;
+    height: auto;
+  }
+  .card-tour__back-info {
+    height: 85%;
+    padding: 6rem;
+    display: block;
+  }
+  .card-tour__back-info__text {
+    margin-bottom: 5rem;
+  }
+  .card-tour__title {
+    top: 25rem;
+  }
+  .card-tour:hover .card-tour__side_front {
+    transform: rotateY(0deg);
+  }
 }

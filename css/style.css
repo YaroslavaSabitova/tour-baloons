@@ -1129,4 +1129,68 @@ body {
     font-size: 2.5rem;
     line-height: 4rem;
   }
+  .wrapper__imgs {
+    width: 100%;
+    margin-bottom: 65%;
+  }
+  .section-adventure {
+    align-items: unset;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+    height: 200rem;
+    padding: 15% 0;
+    margin-bottom: 2rem;
+  }
+  .container_wrapper {
+    justify-content: space-around;
+  }
+  .adventure-card {
+    margin-bottom: unset;
+  }
+  .card-tour__title {
+    top: 33rem;
+    font-size: 2.5rem;
+  }
+  .book {
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 40%, rgba(195, 149, 106, 0.2) 100%, rgba(195, 149, 106, 0.2)), url(../img/form-background.jpg) center/cover no-repeat;
+    padding: 5rem;
+    text-align: center;
+  }
+  .book__form {
+    text-align: left;
+  }
+  .book-title {
+    text-align: center;
+  }
+  .form__input {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .form__label {
+    margin: 1rem 0 0 1rem;
+    width: 100%;
+  }
+  .form__group-radio {
+    width: 100%;
+  }
+  .form__group-radio:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+  .form__label-radio {
+    font-size: 3rem;
+    padding-left: 7rem;
+  }
+  .form__button-radio {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.5rem solid #A14F03;
+  }
+  .form__group button {
+    margin-left: 2rem;
+  }
+  .footer__list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+  }
 }

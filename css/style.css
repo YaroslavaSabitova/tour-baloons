@@ -72,7 +72,7 @@ body {
   font-size: 1.6rem;
   color: #777777;
   letter-spacing: .2rem;
-  padding: 5rem;
+  padding: 3rem;
   background: #ffffff;
 }
 
@@ -1123,6 +1123,9 @@ body {
   }
   html {
     font-size: 30%;
+  }
+  body {
+    padding: 1rem;
   }
   .title-second {
     font-size: 2.9rem;

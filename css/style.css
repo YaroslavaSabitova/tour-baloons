@@ -1,70 +1,87 @@
+@charset "UTF-8";
+/* line 57, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-10px {
   margin-bottom: 1rem;
 }
 
+/* line 60, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-20px {
   margin-bottom: 2rem;
 }
 
+/* line 63, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-30px {
   margin-bottom: 3rem;
 }
 
+/* line 66, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-40px {
   margin-bottom: 4rem;
 }
 
+/* line 69, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-50px {
   margin-bottom: 5rem;
 }
 
+/* line 72, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-60px {
   margin-bottom: 6rem;
 }
 
+/* line 75, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .margin-bottom-80px {
   margin-bottom: 8rem;
 }
 
+/* line 78, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .padding-top-80px {
   padding-top: 8rem;
 }
 
+/* line 81, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .padding-bottom-80px {
   padding-bottom: 8rem;
 }
 
+/* line 84, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .container_color {
   background-color: #f7f7f7;
   position: relative;
   z-index: 0;
 }
 
+/* line 89, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .container_size {
   max-width: 114rem;
   margin: 0 auto;
 }
 
+/* line 93, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .container_wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
+/* line 98, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .text-align {
   text-align: center;
 }
 
+/* line 101, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 *, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* line 106, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 html {
   font-size: 62.5%;
 }
 
+/* line 109, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -75,6 +92,7 @@ body {
   background: #ffffff;
 }
 
+/* line 118, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .header {
   position: relative;
   height: 95vh;
@@ -83,11 +101,13 @@ body {
 }
 
 @media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  /* line 118, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .header {
     background: linear-gradient(90deg, rgba(195, 149, 106, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/background-1-big.jpg) center/cover no-repeat;
   }
 }
 
+/* line 126, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .header__logo {
   position: absolute;
   top: 4rem;
@@ -97,10 +117,12 @@ body {
   transition: .5s;
 }
 
+/* line 134, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .header__logo:hover {
   transform: scale(1.1);
 }
 
+/* line 137, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .header__box {
   position: absolute;
   top: 50%;
@@ -110,10 +132,12 @@ body {
   text-align: center;
 }
 
+/* line 145, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-first {
   color: #ffffff;
 }
 
+/* line 148, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-first__main {
   display: block;
   text-transform: uppercase;
@@ -129,6 +153,7 @@ body {
   backface-visibility: hidden;
 }
 
+/* line 162, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-first__secondary {
   display: block;
   margin-bottom: 5rem;
@@ -171,6 +196,7 @@ body {
   }
 }
 
+/* line 200, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -189,15 +215,18 @@ body {
   box-shadow: 3px 3px 4px #7e7e7e80;
 }
 
+/* line 216, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn:hover {
   transform: translateY(-0.5rem);
 }
 
+/* line 218, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn:hover::after {
   opacity: 0;
   transform: scaleX(1.5) scaleY(1.7);
 }
 
+/* line 222, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn:active {
   transform: translateY(-0.2rem);
   color: #383838;
@@ -205,6 +234,7 @@ body {
   box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* line 228, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn::after {
   content: "";
   background: #ffffff;
@@ -219,22 +249,26 @@ body {
   transition: all .5s;
 }
 
+/* line 241, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn_animated {
   animation: BtnToUP .5s ease-out .7s;
   backface-visibility: hidden;
   animation-fill-mode: backwards;
 }
 
+/* line 246, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn_brown {
   color: #ffffff;
   background: #A14F03;
   transition: all .3s;
 }
 
+/* line 251, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn_brown:active {
   color: #A14F03;
 }
 
+/* line 254, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn_brown::after {
   background: #A14F03;
 }
@@ -250,10 +284,12 @@ body {
   }
 }
 
+/* line 265, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-about {
   text-align: center;
 }
 
+/* line 268, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-second {
   background: linear-gradient(90deg, #c3956a 3.65%, #A14F03 100%);
   -webkit-background-clip: text;
@@ -270,6 +306,7 @@ body {
   display: inline-block;
 }
 
+/* line 281, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-second::after {
   content: '';
   position: absolute;
@@ -284,19 +321,23 @@ body {
   margin-bottom: -1rem;
 }
 
+/* line 295, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-second:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
+/* line 299, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-second_white {
   color: #ffffff;
 }
 
+/* line 302, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-second_white::after {
   background-color: #ffffff;
 }
 
+/* line 305, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-third {
   font-size: 2rem;
   font-weight: 700;
@@ -307,10 +348,12 @@ body {
   transition: .5s;
 }
 
+/* line 314, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .title-third:hover {
   color: #383838;
 }
 
+/* line 317, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .paragraph {
   font-size: 1.6rem;
   font-weight: 400;
@@ -319,6 +362,7 @@ body {
   line-height: 140%;
 }
 
+/* line 324, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn-text {
   border-radius: .3rem;
   font-weight: 700;
@@ -330,6 +374,7 @@ body {
   display: inline-block;
 }
 
+/* line 334, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn-text:hover {
   color: #ffffff;
   background: #c3956a;
@@ -337,29 +382,35 @@ body {
   transform: translateY(-0.2rem);
 }
 
+/* line 340, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .btn-text:active {
   transform: translateY(0.2rem);
   background: #A14F03;
   box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* line 346, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .wrapper__text {
   width: 50%;
   text-align: left;
 }
 
+/* line 350, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .wrapper__text:hover .title-third {
   color: #383838;
 }
 
+/* line 352, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .wrapper__imgs {
   width: 50%;
 }
 
+/* line 355, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition {
   position: relative;
 }
 
+/* line 358, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition__photo {
   width: 55%;
   box-shadow: 3px 3px 4px #7e7e7e80;
@@ -371,31 +422,37 @@ body {
   filter: brightness(0.9);
 }
 
+/* line 368, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition__photo_n1 {
   top: 0rem;
   left: 3rem;
 }
 
+/* line 372, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition__photo_n2 {
   top: 9rem;
   right: 1rem;
 }
 
+/* line 376, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition__photo_n3 {
   top: 17rem;
   left: 7rem;
 }
 
+/* line 380, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition__photo:hover {
   transform: scale(1.05);
   z-index: 20;
   filter: brightness(1.02);
 }
 
+/* line 385, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.95);
 }
 
+/* line 388, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-adventure {
   height: 73.1rem;
   display: flex;
@@ -404,6 +461,7 @@ body {
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
+/* line 395, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .adventure-card {
   background: rgba(255, 255, 255, 0.8);
   width: 24rem;
@@ -417,11 +475,13 @@ body {
   transition: .5s;
 }
 
+/* line 407, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .adventure-card:hover {
   transform: scale(1.05);
   background: #ffffff;
 }
 
+/* line 411, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .adventure-card__icon {
   background: linear-gradient(90deg, #c3956a 3.65%, #A14F03 100%);
   -webkit-background-clip: text;
@@ -429,20 +489,24 @@ body {
   font-size: 6.3rem;
 }
 
+/* line 415, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .adventure-card:hover .adventure-card__icon {
   background: #A14F03;
   -webkit-background-clip: text;
   color: transparent;
 }
 
+/* line 420, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .adventure-card:hover .title-third {
   color: #383838;
 }
 
+/* line 423, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-tour {
   text-align: center;
 }
 
+/* line 426, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour {
   width: 34.2rem;
   height: 52rem;
@@ -451,6 +515,7 @@ body {
   position: relative;
 }
 
+/* line 433, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__side {
   position: absolute;
   height: 52rem;
@@ -464,41 +529,50 @@ body {
   overflow: hidden;
 }
 
+/* line 445, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__side_front {
   background: #ffffff;
 }
 
+/* line 448, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__side_back {
   background: linear-gradient(120deg, #c3956a, #A14F03);
   transform: rotateY(180deg);
 }
 
+/* line 452, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour:hover .card-tour__side_front {
   transform: rotateY(-180deg);
 }
 
+/* line 455, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour:hover .card-tour__side_back {
   transform: rotateY(0deg);
 }
 
+/* line 458, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__img {
   height: 24.5rem;
   background-blend-mode: hard-light;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
+/* line 463, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__img_1 {
   background: #c3956a url(../img/card-1.jpg) center/cover no-repeat;
 }
 
+/* line 466, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__img_2 {
   background: #c3956a url(../img/card-2.jpg) center/cover no-repeat;
 }
 
+/* line 469, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__img_3 {
   background: #c3956a url(../img/card-3.jpg) center/cover no-repeat;
 }
 
+/* line 472, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__title {
   position: absolute;
   top: 17rem;
@@ -513,25 +587,30 @@ body {
   line-height: 150%;
 }
 
+/* line 485, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__title span {
   background: linear-gradient(90deg, #c3956a, #A14F03);
   padding: .7rem 1.5rem;
 }
 
+/* line 490, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__txt ul {
   list-style: none;
   text-align: center;
 }
 
+/* line 494, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__txt ul li {
   font-weight: 700;
   text-decoration: underline;
 }
 
+/* line 497, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__txt ul li:not(:last-child) {
   margin-bottom: 2rem;
 }
 
+/* line 500, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__back-info {
   height: 52rem;
   padding: 10rem 3.2rem;
@@ -542,6 +621,7 @@ body {
   align-items: center;
 }
 
+/* line 509, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__back-info__text {
   color: #ffffff;
   text-transform: uppercase;
@@ -550,19 +630,23 @@ body {
   letter-spacing: .2rem;
 }
 
+/* line 516, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .card-tour__back-info__text-value {
   font-size: 6rem;
 }
 
+/* line 519, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-feedback {
   position: relative;
 }
 
+/* line 522, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-feedback__info {
   flex-direction: column;
   align-items: center;
 }
 
+/* line 526, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .bg-video {
   position: absolute;
   top: 0;
@@ -574,6 +658,7 @@ body {
   object-fit: cover;
 }
 
+/* line 531, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .bg-gradient {
   position: absolute;
   top: 0;
@@ -585,6 +670,7 @@ body {
   background: linear-gradient(90deg, rgba(195, 149, 106, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%);
 }
 
+/* line 536, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card {
   width: 95%;
   background: rgba(255, 255, 255, 0.8);
@@ -595,6 +681,7 @@ body {
   transition: all .7s;
 }
 
+/* line 545, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card__img {
   width: 15rem;
   height: 15rem;
@@ -607,12 +694,14 @@ body {
   position: relative;
 }
 
+/* line 556, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card__img img {
   height: 100%;
   transform: scale(1.2);
   transition: all .7s;
 }
 
+/* line 561, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card__name {
   position: absolute;
   top: 50%;
@@ -625,25 +714,30 @@ body {
   transition: all .7s;
 }
 
+/* line 572, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card:hover .feedback-card__name {
   transform: translate(-50%, -50%);
   opacity: 1;
 }
 
+/* line 576, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card:hover img {
   transform: scale(1);
   filter: blur(0.3rem) brightness(0.7);
 }
 
+/* line 580, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .feedback-card:hover .title-third {
   color: #383838;
 }
 
+/* line 583, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .section-book {
   padding: 10rem 0;
   background: linear-gradient(90deg, #c3956a, #A14F03);
 }
 
+/* line 587, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .book {
   height: 100%;
   background: linear-gradient(105deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 55%, rgba(195, 149, 106, 0.2) 55.1%, rgba(195, 149, 106, 0.2)), url(../img/form-background.jpg) center/cover no-repeat;
@@ -653,10 +747,12 @@ body {
   padding: 5rem;
 }
 
+/* line 595, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .book-title {
   text-align: left;
 }
 
+/* line 599, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input {
   width: 40%;
   padding: 1.2rem 2.2rem;
@@ -669,40 +765,48 @@ body {
   transition: all .5s;
 }
 
+/* line 610, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input:hover {
   box-shadow: 3px 3px 4px #7e7e7e80;
 }
 
+/* line 613, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input:focus {
   outline: none;
   border-bottom: 0.3rem solid #3cdb37;
 }
 
+/* line 617, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input:focus:invalid {
   border-bottom: 0.3rem solid #D76363;
 }
 
+/* line 620, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__label {
   display: block;
   transition: all .5s;
   margin: 1rem 0 0 1.5rem;
 }
 
+/* line 625, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-2rem);
 }
 
+/* line 630, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__group-radio {
   width: 25%;
   display: inline-block;
 }
 
+/* line 634, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input-radio {
   display: none;
 }
 
+/* line 637, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__label-radio {
   cursor: pointer;
   position: relative;
@@ -710,6 +814,7 @@ body {
   font-weight: 500;
 }
 
+/* line 643, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__button-radio {
   width: 2.5rem;
   height: 2.5rem;
@@ -721,6 +826,7 @@ body {
   left: 0rem;
 }
 
+/* line 653, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__button-radio::after {
   content: "";
   display: block;
@@ -736,10 +842,12 @@ body {
   transition: all .3s;
 }
 
+/* line 667, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
   opacity: 1;
 }
 
+/* line 670, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer {
   background: #383838;
   padding: 8rem 0rem;
@@ -748,10 +856,12 @@ body {
   flex-direction: column;
 }
 
+/* line 677, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer__logo {
   width: 10rem;
 }
 
+/* line 680, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer__list {
   list-style: none;
   width: 87rem;
@@ -759,6 +869,7 @@ body {
   justify-content: space-between;
 }
 
+/* line 687, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer__link:link, .footer__link:visited {
   color: #ffffff;
   text-decoration: none;
@@ -768,6 +879,7 @@ body {
   z-index: 1;
 }
 
+/* line 695, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer__link::after {
   content: "";
   background: linear-gradient(90deg, #c3956a, #A14F03);
@@ -782,24 +894,29 @@ body {
   transition: transform 0.7s ease;
 }
 
+/* line 708, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer__link:hover::after {
   z-index: -1;
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
+/* line 713, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer img {
   transition: all .7s;
 }
 
+/* line 715, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .footer img:hover {
   transform: scale(1.1);
 }
 
+/* line 719, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle {
   display: none;
 }
 
+/* line 722, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__button {
   background: #ffffff;
   width: 7rem;
@@ -814,6 +931,7 @@ body {
   box-shadow: 3px 3px 4px #7e7e7e80;
 }
 
+/* line 735, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__background {
   width: 5rem;
   height: 5rem;
@@ -826,6 +944,7 @@ body {
   transition: all .7s;
 }
 
+/* line 746, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__nav {
   height: 100vh;
   width: 100%;
@@ -838,6 +957,7 @@ body {
   transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
+/* line 757, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__list {
   position: absolute;
   top: 50%;
@@ -846,14 +966,17 @@ body {
   width: 100%;
 }
 
+/* line 764, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__item {
   text-align: center;
 }
 
+/* line 766, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__item:not(:last-child) {
   margin-bottom: 6rem;
 }
 
+/* line 770, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__link:link, .navigation__link:visited {
   color: #ffffff;
   font-size: 4rem;
@@ -868,26 +991,31 @@ body {
   display: inline-block;
 }
 
+/* line 783, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
   color: #A14F03;
   transform: translateX(1rem);
 }
 
+/* line 788, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle:checked ~ .navigation__background {
   transform: scale(80);
 }
 
+/* line 791, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
 }
 
+/* line 795, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
 }
 
+/* line 799, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
   height: .2rem;
@@ -895,6 +1023,7 @@ body {
   display: inline-block;
 }
 
+/* line 807, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
@@ -902,195 +1031,249 @@ body {
   transition: all .2s;
 }
 
+/* line 814, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__icon::before {
   top: -.8rem;
 }
 
+/* line 816, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__icon::after {
   top: .8rem;
 }
 
+/* line 819, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__button:hover .navigation__icon::before {
   top: -1rem;
 }
 
+/* line 822, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__button:hover .navigation__icon::after {
   top: 1rem;
 }
 
+/* line 825, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle:checked + .navigation__button .navigation__icon {
   background: transparent;
 }
 
+/* line 828, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle:checked + .navigation__button .navigation__icon::before {
   top: 0;
   transform: rotate(135deg);
 }
 
+/* line 832, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
 .navigation__toggle:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
 }
 
 @media (max-width: 1199px) {
+  /* line 841, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container {
     width: 960px;
   }
+  /* line 844, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   html {
     font-size: 56.25%;
   }
+  /* line 847, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .paragraph {
     font-size: 1.5rem;
   }
+  /* line 850, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-first__main {
     font-size: 4rem;
   }
+  /* line 853, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-first__secondary {
     font-size: 3.5rem;
     margin-bottom: 3.5rem;
   }
+  /* line 857, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-second {
     font-size: 4rem;
   }
+  /* line 860, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container_size {
     max-width: 90rem;
   }
+  /* line 863, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .adventure-card {
     width: 21rem;
   }
+  /* line 866, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-third {
     font-size: 1.7rem;
   }
+  /* line 869, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour {
     width: 27rem;
   }
+  /* line 872, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info__text-value {
     font-size: 5.5rem;
   }
+  /* line 875, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .feedback-card {
     padding: 3rem 11rem;
   }
+  /* line 878, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .book {
     padding: 3.5rem;
   }
+  /* line 881, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__label-radio {
     font-size: 2rem;
   }
+  /* line 885, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__group-radio {
     width: 40%;
     display: block;
   }
+  /* line 889, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__group-radio:not(:last-child) {
     margin-bottom: 3rem;
   }
 }
 
 @media (max-width: 991px) {
+  /* line 896, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container {
     width: 720px;
   }
+  /* line 899, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   html {
     font-size: 34%;
   }
+  /* line 902, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-second {
     font-size: 2.8rem;
   }
+  /* line 905, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-third {
     font-size: 1.9rem;
     margin-bottom: 1.5rem;
   }
+  /* line 909, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .paragraph {
     font-size: 1.6rem;
   }
+  /* line 912, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__input {
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
+  /* line 919, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container {
     width: 540px;
   }
+  /* line 922, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   html {
     font-size: 33%;
   }
+  /* line 925, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .margin-bottom-80px {
     margin-bottom: 5rem;
   }
+  /* line 928, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-second {
     font-size: 3.2rem;
   }
+  /* line 931, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-third {
     font-size: 2.7rem;
   }
+  /* line 934, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .paragraph {
     font-size: 2.5rem;
   }
+  /* line 937, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .header__logo {
     width: 7rem;
     height: 8rem;
   }
+  /* line 941, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container_wrapper {
     flex-direction: column;
     align-items: center;
   }
+  /* line 946, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .wrapper__text {
     width: 90%;
   }
+  /* line 948, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .wrapper__imgs {
     width: 90%;
     margin-bottom: 50rem;
   }
+  /* line 952, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .section-adventure {
     height: 175rem;
   }
+  /* line 955, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .adventure-card {
     width: 85%;
     margin-bottom: 5rem;
   }
+  /* line 959, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour {
     width: 85%;
     height: 70rem;
   }
+  /* line 963, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__side {
     height: 70rem;
   }
+  /* line 966, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info {
     height: 70rem;
   }
+  /* line 969, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info__text {
     font-size: 3rem;
   }
+  /* line 972, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info__text-value {
     font-size: 6rem;
   }
+  /* line 974, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__img {
     height: 60%;
     margin-bottom: .3rem;
   }
+  /* line 978, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__title {
     top: 35rem;
     font-size: 3rem;
   }
+  /* line 983, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__txt ul {
     margin: 0 auto;
     width: 75%;
     text-align: center;
   }
+  /* line 988, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__txt ul li {
     line-height: 3rem;
   }
+  /* line 991, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour:not(:last-child) {
     margin-bottom: 5rem;
   }
+  /* line 994, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .btn, .btn:link, .btn:visited {
     padding: 2rem 3rem;
     font-size: 2.7rem;
   }
+  /* line 998, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .feedback-card {
     text-align: center;
     padding: 3rem 7rem;
   }
+  /* line 1002, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .feedback-card__img {
     float: none;
     width: 20rem;
@@ -1098,46 +1281,58 @@ body {
     margin: 0 auto;
     margin-bottom: 3rem;
   }
+  /* line 1010, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .footer__logo {
     margin-bottom: 7rem;
   }
+  /* line 1013, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .footer__list {
     width: 55rem;
     flex-wrap: wrap;
   }
+  /* line 1017, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .footer__list li {
     margin-bottom: 3rem;
   }
+  /* line 1021, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .footer__link:link, .footer__link:visited {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 575px) {
+  /* line 1028, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container {
     width: 100%;
   }
+  /* line 1031, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   html {
     font-size: 30%;
   }
+  /* line 1034, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   body {
     padding: 1rem;
   }
+  /* line 1037, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-second {
     font-size: 2.9rem;
     line-height: 4rem;
   }
+  /* line 1041, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-second::after {
     display: none;
   }
+  /* line 1044, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .title-third {
     font-size: 2.5rem;
     line-height: 4rem;
   }
+  /* line 1048, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .wrapper__imgs {
     width: 100%;
     margin-bottom: 65%;
   }
+  /* line 1052, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .section-adventure {
     align-items: unset;
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
@@ -1145,70 +1340,88 @@ body {
     padding: 15% 0;
     margin-bottom: 2rem;
   }
+  /* line 1059, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .container_wrapper {
     justify-content: space-around;
   }
+  /* line 1062, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .adventure-card {
     margin-bottom: unset;
   }
+  /* line 1065, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__title {
     top: 33rem;
     font-size: 2.5rem;
   }
+  /* line 1069, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .book {
     background: linear-gradient(105deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9) 40%, rgba(195, 149, 106, 0.2) 100%, rgba(195, 149, 106, 0.2)), url(../img/form-background.jpg) center/cover no-repeat;
     padding: 5rem;
     text-align: center;
   }
+  /* line 1074, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .book__form {
     text-align: left;
   }
+  /* line 1077, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .book-title {
     text-align: center;
   }
+  /* line 1081, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__input {
     width: 100%;
     margin-bottom: 2rem;
   }
+  /* line 1085, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__label {
     margin: 1rem 0 0 1rem;
     width: 100%;
   }
+  /* line 1089, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__group-radio {
     width: 100%;
   }
+  /* line 1092, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__group-radio:not(:last-child) {
     margin-bottom: 5rem;
   }
+  /* line 1095, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__label-radio {
     font-size: 3rem;
     padding-left: 7rem;
   }
+  /* line 1099, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__button-radio {
     width: 3.5rem;
     height: 3.5rem;
     border: 0.5rem solid #A14F03;
   }
+  /* line 1105, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .form__group button {
     margin-left: 2rem;
   }
+  /* line 1108, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .footer__list {
     width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 0 4rem;
   }
+  /* line 1114, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour {
     height: auto;
     box-shadow: 3px 3px 4px #7e7e7e80;
   }
+  /* line 1118, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__side {
     position: unset;
   }
+  /* line 1121, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__side_front {
     padding-bottom: 13rem;
     box-shadow: none;
   }
+  /* line 1125, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__side_back {
     transform: none;
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
@@ -1216,18 +1429,24 @@ body {
     margin-top: -10rem;
     height: auto;
   }
+  /* line 1132, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info {
     height: 85%;
     padding: 6rem;
     display: block;
   }
+  /* line 1137, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__back-info__text {
     margin-bottom: 5rem;
   }
+  /* line 1140, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour__title {
     top: 25rem;
   }
+  /* line 1143, ../../Desktop/ВЁРСТКА/2ой курс на степике/tour-baloons/tour-baloons/sass/style.sass */
   .card-tour:hover .card-tour__side_front {
     transform: rotateY(0deg);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
